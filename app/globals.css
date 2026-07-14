@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-navy-700/60;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    @apply bg-navy-950 text-white antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: theme("colors.brand.purple.500");
+    color: white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: theme("colors.navy.950");
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme("colors.navy.700");
+    border-radius: 999px;
+    border: 2px solid theme("colors.navy.950");
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme("colors.brand.indigo.500");
+  }
+
+  /* Visible focus states everywhere — accessibility floor */
+  :focus-visible {
+    outline: 2px solid theme("colors.brand.orange.400");
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  /* Keep anchor-linked sections clear of the fixed navbar */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  /* Skip link for keyboard users */
+  .skip-link {
+    @apply fixed top-2 z-[100] -translate-y-24 rounded-lg bg-brand-orange-500 px-4 py-2 font-bold text-navy-950 transition-transform focus:translate-y-0;
+    inset-inline-start: 0.5rem;
+  }
+
+  /* Signature gradient text, matches the Reachy wordmark exactly */
+  .text-gradient-brand {
+    background-image: linear-gradient(90deg, #0593fa 0%, #5b3ef5 35%, #c92cf4 65%, #fb7a3c 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-brand-animated {
+    @apply text-gradient-brand animate-gradient-shift;
+    background-size: 300% auto;
+  }
+
+  .bg-brand-gradient-animated {
+    background-size: 300% 300%;
+    @apply bg-brand-gradient animate-gradient-shift;
+  }
+
+  /* Glass panel — core signature surface treatment */
+  .glass {
+    @apply relative border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply relative border border-white/15 bg-white/[0.07] backdrop-blur-2xl;
+  }
+
+  .glass-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+  .glass-sheen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 55%);
+    pointer-events: none;
+  }
+
+  .noise-overlay {
+    position: relative;
+  }
+  .noise-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.035;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .container-px {
+    @apply px-5 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .form-input {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-[15px] font-normal text-white placeholder:text-ink-soft transition-colors focus:border-brand-purple-400/60 focus:bg-white/[0.06] focus:outline-none;
+  }
+}
+
+/* Respect users who've asked for less motion — applies globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

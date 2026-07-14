@@ -1,0 +1,193 @@
+import type { Dictionary } from "../types";
+
+export const en: Dictionary = {
+  meta: {
+    titleSuffix: "Reachy | Digital Marketing & Branding Agency",
+    defaultDescription:
+      "Reachy is a full-service creative agency specializing in branding, design, content creation and digital marketing — helping Arabic-speaking businesses lead their market with an identity worth trusting.",
+  },
+  nav: {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    portfolio: "Portfolio",
+    pricing: "Pricing",
+    team: "Team",
+    testimonials: "Testimonials",
+    faq: "FAQ",
+    contact: "Contact",
+    startProject: "Start Your Project",
+    langSwitch: "العربية",
+  },
+  hero: {
+    eyebrow: "Full-service creative agency",
+    headline: "We build brands",
+    headlineHighlight: "people trust",
+    subhead:
+      "From your visual identity to your first paid campaign, Reachy turns your vision into a brand that shows up everywhere your customers look. Clear strategy, sharp execution, results you can measure.",
+    ctaPrimary: "Start Your Project",
+    ctaSecondary: "See Our Work",
+    scrollHint: "Explore",
+  },
+  trustedBy: {
+    label: "Brands that trust Reachy",
+  },
+  stats: {
+    label: "Numbers that tell a growth story",
+  },
+  services: {
+    eyebrow: "Services",
+    title: "Everything your brand needs, under one roof",
+    subtitle:
+      "From the first logo sketch to your latest performance report, our team covers every layer of branding and digital marketing to a global standard.",
+    viewAll: "View All Services",
+    problem: "The Challenge",
+    solution: "Our Solution",
+    benefits: "What You Get",
+    ctaCard: "Learn more",
+  },
+  portfolio: {
+    eyebrow: "Portfolio",
+    title: "Work that speaks for itself",
+    subtitle: "A curated selection of projects we've designed and delivered for clients across industries.",
+    viewAll: "View Full Portfolio",
+    filterAll: "All",
+    viewProject: "View Project",
+    related: "Related Projects",
+    close: "Close",
+  },
+  pricing: {
+    eyebrow: "Pricing",
+    title: "Packages built around your ambition",
+    subtitle: "Pick the tier that fits where your project is today — we scale with you from there.",
+    recommended: "Most Popular",
+    startingAt: "Starting at",
+    egp: "EGP",
+    perMonth: "/ month",
+    requestQuote: "Request a Quote",
+    categories: {
+      social: "Social Media",
+      branding: "Branding",
+      ads: "Paid Advertising",
+      web: "Websites",
+    },
+    note: "Prices are indicative and can be tailored to your project's scope. Contact us for an accurate quote.",
+  },
+  team: {
+    eyebrow: "Team",
+    title: "The minds behind the work",
+    subtitle: "A small team with outsized experience, treating every project like it's our own.",
+  },
+  testimonials: {
+    eyebrow: "Testimonials",
+    title: "Trust, built on results",
+    subtitle: "Don't take our word for it — hear it from the clients we've worked with.",
+  },
+  faq: {
+    eyebrow: "FAQ",
+    title: "Common questions, clear answers",
+    subtitle: "Everything you'd want to know before starting your project with us.",
+    stillHave: "Still have a question?",
+    contactUs: "Get in touch directly",
+  },
+  contact: {
+    eyebrow: "Contact",
+    title: "Let's start your project",
+    subtitle: "Tell us about your project and goals, and our team will reply within one business day with an initial plan and quote.",
+    formName: "Full Name",
+    formEmail: "Email Address",
+    formPhone: "Phone Number",
+    formService: "Service Needed",
+    formBudget: "Estimated Budget",
+    formMessage: "Project Details",
+    formMessagePlaceholder: "Tell us a bit about your business and what you'd like to achieve...",
+    formSubmit: "Send Request",
+    formSubmitting: "Sending...",
+    formSuccess: "Your request has been received",
+    formSuccessSub: "Thanks for reaching out to Reachy — our team will be in touch shortly.",
+    formSelectService: "Select a service",
+    formSelectBudget: "Select a budget",
+    directLabel: "Or reach us directly",
+    whatsappCta: "Message us on WhatsApp",
+    addressLabel: "Address",
+    hoursLabel: "Working Hours",
+    hoursValue: "Sat - Thu, 10:00 AM - 6:00 PM",
+    socialLabel: "Follow us",
+    mapPlaceholder: "Location map",
+  },
+  about: {
+    eyebrow: "About Us",
+    title: "Reachy isn't just an execution agency — we're a partner who thinks with you",
+    intro:
+      "Reachy was founded on a simple idea: every business, regardless of size, deserves a visual identity and marketing campaign that rivals global brands. We work with Arabic-speaking business owners to turn their ideas into brands that are real, present, and influential.",
+    missionLabel: "Our Mission",
+    mission:
+      "We help businesses stand out through premium branding, creative design, content creation, and digital marketing built on clear strategy and measurable results.",
+    values: [
+      {
+        title: "Quality over speed",
+        desc: "We'd rather deliver outstanding work a little later than average work on time.",
+      },
+      {
+        title: "Transparency at every step",
+        desc: "Regular reporting and constant communication — you always know where your budget goes.",
+      },
+      {
+        title: "Strategy before execution",
+        desc: "No design or ad goes live without a clear plan grounded in real market analysis.",
+      },
+      {
+        title: "Measurable results",
+        desc: "Every campaign we run is measured against clear numbers, not impressions.",
+      },
+    ],
+    processTitle: "How We Work",
+    processSubtitle: "A clear methodology from day one until you see results on the ground.",
+    processSteps: [
+      {
+        label: "01",
+        title: "Discovery & Analysis",
+        desc: "We understand your business, audience, and competitors before we move a single pixel.",
+      },
+      {
+        label: "02",
+        title: "Strategy",
+        desc: "We build a complete marketing plan grounded in your actual goals and budget.",
+      },
+      {
+        label: "03",
+        title: "Creative Execution",
+        desc: "Our designers, writers, and marketers bring the plan to life to the highest standard.",
+      },
+      {
+        label: "04",
+        title: "Measure & Optimize",
+        desc: "We track performance continuously and refine strategy based on real data.",
+      },
+    ],
+  },
+  cta: {
+    title: "Ready to make your brand trend?",
+    subtitle: "Let's talk about your project in a quick, no-obligation call.",
+    primary: "Start Your Project",
+    secondary: "Message Us on WhatsApp",
+  },
+  footer: {
+    tagline: "Helping Arabic-speaking businesses stand out with world-class branding and digital marketing.",
+    quickLinks: "Quick Links",
+    servicesTitle: "Services",
+    contactTitle: "Contact",
+    rights: "All rights reserved",
+    madeWith: "Made with passion in Cairo",
+  },
+  whatsapp: {
+    tooltip: "Chat with us on WhatsApp",
+    defaultMessage: "Hi Reachy, I'd like to know more about your services",
+  },
+  common: {
+    readMore: "Read more",
+    learnMore: "Learn more",
+    backHome: "Back to home",
+    minutesToRead: "min read",
+  },
+};
