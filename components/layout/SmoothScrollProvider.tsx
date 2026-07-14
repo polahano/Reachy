@@ -6,7 +6,9 @@ import Lenis from "lenis";
 export function SmoothScrollProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) return;
+    // Quick experiment: disable Lenis to compare native scrolling performance.
+    const DISABLE_LENIS = true;
+    if (prefersReduced || DISABLE_LENIS) return;
 
     const lenis = new Lenis({
       duration: 1.1,
